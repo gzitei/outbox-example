@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: outbox-example
+  output:
+    ansi:
+      enabled: always
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: none
+worker:
+  queue:
+    name: password-updated
+  exchange:
+    name: password-updated-notifications
+  route:
+    name: password.changed.notifier
