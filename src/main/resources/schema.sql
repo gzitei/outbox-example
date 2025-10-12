@@ -1,7 +1,5 @@
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS outbox_messages;
-DROP TABLE IF EXISTS users_aud;
-DROP TABLE IF EXISTS outbox_messages_aud;
 
 CREATE TABLE users (
     user_id BIGINT PRIMARY KEY AUTO_INCREMENT,

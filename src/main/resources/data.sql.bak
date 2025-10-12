@@ -1,6 +1,0 @@
-INSERT INTO users (email, name, password)
-VALUES ('user@test.com', 'Test User', 'supersecret');
-
-INSERT INTO users
-(email, name, password)
-VALUES ('anotheruser@test.com', 'Another Test User', 'passw0rd');
