@@ -63,6 +63,8 @@ public class UserServiceTest {
         // then
         assertEquals(1, users.size());
         final UserEntity user = users.get(0);
+        final List<OutboxMessageEntity> messages = outboxMessageRepository.findAll();
+        assertEquals(0, messages.size());
         assertEquals(existing.id(), user.getUserId());
         assertEquals(existing.name(), user.getName());
         assertEquals(existing.email(), user.getEmail());
